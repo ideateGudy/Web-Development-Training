@@ -126,7 +126,6 @@ main {
 
 .agreements {
 
-  /* width: 80%; */
   margin: 1rem auto;
   font-size: 12px;
   text-align: center;
@@ -139,6 +138,10 @@ main {
 
 .desktop {
   display: none;
+}
+
+.mobile {
+  width: 80%;
 }
 
 
