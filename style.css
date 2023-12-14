@@ -136,9 +136,6 @@ main {
   display: none;
 }
 
-::-webkit-calendar-picker-indicator {
-  background-image: url(./img/calender.png);
-}
 
 /* -------Footer (privacy policy and terms) ends----------- */
 
@@ -228,4 +225,8 @@ main {
     }
 
   }
+}
+
+::-webkit-calendar-picker-indicator {
+  background-image: url(./img/calender.png);
 }
