@@ -24,7 +24,13 @@ label {
   >input,
   select {
     border: 1px solid rgba(240, 240, 240, 1);
-    padding: 8px;
+    padding: 10px 7px;
+    font-size: 12px;
+    color: #a8a8a8;
+
+    &::placeholder {
+      color: #a8a8a8;
+    }
 
     &:focus {
       outline: 2px solid rgba(46, 196, 182, 1);
@@ -38,12 +44,16 @@ label {
 
     >input {
       position: absolute;
-      padding: 6px;
+      padding: 10px 7px;
       width: 100%;
       border: 1px solid rgba(240, 240, 240, 1);
 
+      &::placeholder {
+        color: #a8a8a8;
+      }
+
       &:focus {
-        outline: 1px solid rgba(46, 196, 182, 1);
+        outline: 2px solid rgba(46, 196, 182, 1);
       }
 
     }
@@ -235,6 +245,8 @@ main {
   }
 }
 
-::-webkit-calendar-picker-indicator {
+/* Change the icon on the date of birth input */
+
+/* ::-webkit-calendar-picker-indicator {
   background-image: url(./img/calender.png);
-}
+} */
