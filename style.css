@@ -174,7 +174,7 @@ main {
 
 /* Media Query for tablet */
 
-@media (min-width: 375px) and (max-width: 899px) {
+@media (min-width: 500px) and (max-width: 999px) {
 
   .form-details {
     margin: 1rem !important;
@@ -195,7 +195,7 @@ main {
 /*---------------------- Media Query for desktop ------------------------------------ */
 
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   body {
     margin: 0;
     padding: 0;
