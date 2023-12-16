@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/*----------- Universal styling starts here--------------- */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: rgba(247, 253, 252, 1);
@@ -11,14 +12,21 @@ body {
   padding: 0;
 }
 
+
 label {
   margin-bottom: .5rem;
 }
+
+
 
 .input-item {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+
+  >input[type="date"] {
+    width: 100%;
+  }
 
 
   >input,
@@ -63,12 +71,17 @@ label {
       position: absolute;
       width: 15px;
       right: 4px;
-      top: 7px;
+      top: 12px;
     }
   }
 
 
 }
+
+/*----------- Universal styling ends here--------------- */
+
+
+/*----------- Main section--------------- */
 
 main {
   .left-section {
@@ -90,6 +103,8 @@ main {
       margin-top: -25px;
     }
   }
+
+  /* ----------- form right section----------- */
 
   >form {
     width: 100%;
@@ -157,10 +172,30 @@ main {
 
 /* -------Footer (privacy policy and terms) ends----------- */
 
-/*---------------------- Media Query ------------------------------------ */
+/* Media Query for tablet */
+
+@media (min-width: 375px) and (max-width: 899px) {
+
+  .form-details {
+    margin: 1rem !important;
+
+    .names,
+    .gender-birth,
+    .weight-height {
+      display: flex;
+      flex-direction: row !important;
+
+      :first-child {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+/*---------------------- Media Query for desktop ------------------------------------ */
 
 
-@media (min-width: 500px) {
+@media (min-width: 900px) {
   body {
     margin: 0;
     padding: 0;
@@ -223,9 +258,7 @@ main {
           }
         }
 
-        /* >button{
-          padding: ;
-        } */
+
 
       }
     }
@@ -244,6 +277,8 @@ main {
 
   }
 }
+
+
 
 /* Change the icon on the date of birth input */
 
